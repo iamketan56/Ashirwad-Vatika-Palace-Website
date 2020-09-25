@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Hall</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./fontawsome/css/all.css">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+       
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+            border-radius: 50px;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+
+        /* Number text (1/7 etc) */
+        .numbertext {
+            color: darkred;
+            font-size: 20px;
+            font-weight: 800;
+            padding: 8px 12px;
+            position: absolute;
+            top: 5px;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--first child-->
+        <!--navbar-->
+        <nav class="nav">
+            <div class="nav__header">
+                <img src="./images/circle-cropped (4).png" alt="logo" class="nav__logo">
+            </div>
+
+            <ul class="nav__link">
+                <li><a href="home.html" class="nav__single__link">home</a></li>
+                <li><a href="About.html" class="nav__single__link">about us</a></li>
+                <li><a href="services.html" class="nav__single__link">service</a></li>
+                <li><a href="Gallary.html" class="nav__single__link">gallary</a></li>
+                <li><a href="booking.html" class="nav__single__link">booking</a></li>
+                <li><a href="contact.html" class="nav__single__link">contact</a>
+                <li>
+                    <a href="location.html" class="nav__single__link">location</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="Lawn">
+            <div class="service">
+                <h3 style="color: #f2f2f2; font-style: italic;" class="title">Event Hall</h3>
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="./images/view5.PNG" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="./images/view4.PNG" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="./images/view6.PNG" style="width:100%">
+
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./images/view2.PNG" style="width:100%">
+
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./images/view1.PNG" style="width:100%">
+                
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./images/view5.PNG" style="width:100%">
+                
+                </div>
+        
+            
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+
+            </div>
+
+
+            <footer class="footer">
+                <div class="section-center">
+                    <div class="social_icons">
+                        <p class="recent-post">Check Recent Post
+                            <a href="#" class="social_icon">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                    
+                            <a href="#" class="social_icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                    </p>
+                    </div>
+                    <p class="footer_text">
+                        &copy;<span class="text-primary">Ashirwad Vatika</span>.all right reserved
+                    </p>
+                </div>
+            </footer>
+        </section>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+</body>
+
+</html>
