@@ -49,7 +49,7 @@
   flex: 1 0 100px;
 }
 .nav__single__link {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
