@@ -1,6 +1,5 @@
 <h1 align=center> Ashirwad-Vatika-Palace-Website</h1>
 
-### Using Html,Css,Javascript,Php,Mysql
 
 ![](https://github.com/iamketan56/Ashirwad-Vatika-Palace-Website/blob/master/homepage.PNG)
 ![](https://github.com/iamketan56/Ashirwad-Vatika-Palace-Website/blob/master/Aboutpage.PNG)
